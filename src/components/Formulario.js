@@ -35,8 +35,14 @@ const Formulario = ({ crearCita }) => {
       cita.id = uuidv4();
       console.log(cita);
       crearCita(cita);
+      actualizarCita({
+        mascota: '',
+        propietario: '',
+        fecha: '',
+        hora: '',
+        sintomas: '',
+      });
     }
-
   };
 
   return (
