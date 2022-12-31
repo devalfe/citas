@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -108,4 +109,7 @@ const Formulario = ({ crearCita }) => {
   );
 };
 
+Formulario.propTypes = {
+  crearCita: PropTypes.func.isRequired,
+};
 export default Formulario;
